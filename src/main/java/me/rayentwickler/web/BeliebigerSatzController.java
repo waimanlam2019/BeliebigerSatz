@@ -4,17 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import me.rayentwickler.data.NounRepository;
-import me.rayentwickler.model.Noun;
+import me.rayentwickler.model.SimpleSentence1;
+import me.rayentwickler.service.RandomSentenceService;
 
 @RestController
 public class BeliebigerSatzController {
 	@Autowired
-	private NounRepository nounRepository;
+	private RandomSentenceService randomSentenceService;
 
-	@GetMapping("/noun")
-	public Iterable<Noun> allNouns() {
+	@GetMapping("/sentence")
+	public SimpleSentence1 simpleSentence1() {
 		System.out.println("Garbage....................");
-		return nounRepository.findAll();
+		return randomSentenceService.getSimpleSentence();
 	}
 }
