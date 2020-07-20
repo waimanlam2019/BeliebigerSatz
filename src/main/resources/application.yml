@@ -1,0 +1,18 @@
+#spring:
+#  security:
+#    user:
+#      name: buzz
+#      password: infinity
+
+---
+spring:
+  datasource:
+    driverClassName: org.sqlite.JDBC
+    url: jdbc:sqlite:GermanDB.sqlite
+    username: user1
+    password: pass
+    
+logging:
+  level:
+    root: INFO
+    
