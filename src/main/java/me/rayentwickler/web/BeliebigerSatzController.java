@@ -11,11 +11,11 @@ import me.rayentwickler.model.SimpleSentence1;
 import me.rayentwickler.service.RandomSentenceService;
 
 @RestController
+@CrossOrigin("https://randomgerman.herokuapp.com/")
 public class BeliebigerSatzController {
 	@Autowired
 	private RandomSentenceService randomSentenceService;
 
-	@CrossOrigin
 	@GetMapping("/sentence")
 	public SimpleSentence1 simpleSentence1() {
 
