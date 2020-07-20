@@ -11,7 +11,7 @@ import me.rayentwickler.model.SimpleSentence1;
 import me.rayentwickler.service.RandomSentenceService;
 
 @RestController
-@CrossOrigin(origins = "randomgerman.herokuapp.com")
+@CrossOrigin(origins = "http://randomgerman.herokuapp.com/")
 public class BeliebigerSatzController {
 	@Autowired
 	private RandomSentenceService randomSentenceService;
