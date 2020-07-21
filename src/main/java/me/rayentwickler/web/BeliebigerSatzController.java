@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import me.rayentwickler.model.SimpleSentence1;
+import me.rayentwickler.model.SimpleSentence;
 import me.rayentwickler.service.RandomSentenceService;
 
 @RestController
@@ -17,13 +17,13 @@ public class BeliebigerSatzController {
 	private RandomSentenceService randomSentenceService;
 
 	@GetMapping("/sentence")
-	public SimpleSentence1 simpleSentence1() {
+	public SimpleSentence simpleSentence1() {
 
 		Random rand = new Random();
 		int randInteger = rand.nextInt(2);
 		System.out.println(randInteger);
 
-		SimpleSentence1 sentence = null;
+		SimpleSentence sentence = null;
 		if (randInteger == 0) {
 			sentence = randomSentenceService.getSimpleSentence();
 			System.out.println(sentence.toString());

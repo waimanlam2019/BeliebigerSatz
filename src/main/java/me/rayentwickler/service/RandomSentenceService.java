@@ -1,9 +1,9 @@
 package me.rayentwickler.service;
 
-import me.rayentwickler.model.SimpleSentence1;
+import me.rayentwickler.model.SimpleSentence;
 
 public interface RandomSentenceService {
-	public SimpleSentence1 getSimpleSentence();
+	public SimpleSentence getSimpleSentence();
 
-	public SimpleSentence1 getSimpleSentenceWithEin();
+	public SimpleSentence getSimpleSentenceWithEin();
 }

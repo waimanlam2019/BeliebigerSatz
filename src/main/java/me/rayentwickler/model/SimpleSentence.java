@@ -1,6 +1,17 @@
 package me.rayentwickler.model;
 
-public class SimpleSentence2 {
+public class SimpleSentence {
+	public SimpleSentence(String subject, String verb, String between, String object) {
+		super();
+		this.subject = subject;
+		this.verb = verb;
+		if (between != null) {
+			this.between = between;
+		}
+		this.object = object;
+
+	}
+
 	private String subject;
 	private String verb;
 	private String object;
@@ -44,7 +55,7 @@ public class SimpleSentence2 {
 		this.between = between;
 	}
 
-	public SimpleSentence2() {
+	public SimpleSentence() {
 		// TODO Auto-generated constructor stub
 	}
 

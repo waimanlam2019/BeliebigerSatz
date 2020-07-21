@@ -360,5 +360,14 @@ public class Verb {
 	private String futur_II_wir;
 	private String futur_II_ihr;
 	private String futur_II_Sie;
+	private String default_preposition;
+
+	public String getDefault_preposition() {
+		return default_preposition;
+	}
+
+	public void setDefault_preposition(String default_preposition) {
+		this.default_preposition = default_preposition;
+	}
 
 }
