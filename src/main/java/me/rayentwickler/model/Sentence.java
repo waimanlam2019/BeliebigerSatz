@@ -16,6 +16,11 @@ public class Sentence {
 		return id;
 	}
 
+	@Override
+	public String toString() {
+		return "Sentence [id=" + id + ", sentence=" + sentence + "]";
+	}
+
 	public void setId(String id) {
 		this.id = id;
 	}

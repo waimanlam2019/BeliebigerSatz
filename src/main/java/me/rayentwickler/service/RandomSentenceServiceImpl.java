@@ -11,14 +11,9 @@ public class RandomSentenceServiceImpl implements RandomSentenceService {
 	@Autowired
 	private SentenceRepository sentenceRepository;
 
-	public RandomSentenceServiceImpl() {
-	}
-
 	@Override
 	public Sentence getSentence() {
-		Sentence sentence = sentenceRepository.findRandomSentence();
-		return sentence;
-
+		return sentenceRepository.findRandomSentence();
 	}
 
 }
